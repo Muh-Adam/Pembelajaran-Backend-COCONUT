@@ -72,14 +72,16 @@ INSERT INTO log_aktivitas (nama_aktivitas, waktu) VALUES ('Auditor mengupdate da
 INSERT INTO log_aktivitas (nama_aktivitas, waktu) VALUES ('Auditor menghapus data', NOW());
 INSERT INTO log_aktivitas (nama_aktivitas, waktu) VALUES ('User menambahkan data', NOW());
 
-CREATE USER 'admin'@'localhost'
+CREATE USER 'admin'@'localhost';
 
 GRANT ALL PRIVILEGES ON inventaris_db.* TO 'admin'@'localhost';
 
-CREATE USER 'staff'@'localhost'
+CREATE USER 'staff'@'localhost';
 
-GRANT SELECT, INSERT ON inventaris_db.* TO 'staff'@'localhost';
+GRANT SELECT, INSERT ON inventaris_db.barang TO 'staff'@'localhost';
+GRANT SELECT, INSERT ON inventaris_db.kategori TO 'staff'@'localhost';
+GRANT SELECT, INSERT ON inventaris_db.supplier TO 'staff'@'localhost';
 
-CREATE USER 'auditor'@'localhost'
+CREATE USER 'auditor'@'localhost';
 
-GRANT SELECT ON inventaris_db.* TO 'auditor'@'localhost';
+GRANT SELECT ON inventaris_db.log_aktivitas TO 'auditor'@'localhost';
