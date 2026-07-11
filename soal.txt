@@ -1,0 +1,14 @@
+Soal Baru : Evaluasi IPK Semester
+1. Tambah Kolom Baru
+    Tambahkan kolom IPK bertipe DECIMAL(3,2) pada tabel mahasiswa
+2. Isi Data Awal
+    Isi seluruh baris dengan nilai IPK = 3.00
+3. Perbarui Dengan Perhitungan
+    Naikkan IPK seluruh mahasiswa sebanyak 0.25
+    Naikkan lagi IPK seluruh mahasiswa sebanyak 0.25 khusus untuk mahasiswa jurusan teknik informatika
+4. Ubah Struktur
+    Ubah tipe data kolom jurusan menjadi VARCHAR(250)
+5. Buat Tabel Laporan
+    Buat tabel baru mahasiswa_berprestasi yang hanya berisi kolom nim, mahasiswa, jurusan, dan ipk dari mahasiswa dengan ipk diatas 3.30
+6. Buat Dan Lihat Index
+    Buat idx_jurusan pada kolom jurusan, lalu tampilkan seluruh index milik tabel mahasiswa

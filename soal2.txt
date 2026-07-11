@@ -1,0 +1,15 @@
+SOal : Manajemen User Operator
+Dengan asumsi database akademik dan tabel mahasiswa sudah ada, kerjakan perintah SQL berikut secara berurutan;
+
+1. Buar user baru
+    Buat user baru bernama operator yang bisa login dari localhost dengan password op123.
+2. Berikan hak akses
+    Berapa hak SELECT dan INSERT pada tabel akademik.mahasiswa kepada user operator@localhost.
+3. Verifikasi user
+    Tampilkan daftar user untuk memastikan operator sudah ada.
+4. Verifikasi hak akses
+    Tampilkan seluruh hak akses milik user operator@localhost.
+5. Cabut hak akses
+    Cabut hak INSERT operator@localhost pada tabel akademik.mahasiswa.
+6. Verifikasi perubahan
+    Tampilkan  kembali hak akses operator@localhost untuk memastikan hanya tersisa hak SELECT.
